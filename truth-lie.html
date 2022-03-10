@@ -25,7 +25,7 @@
     </style>
   </head>
   <body>
-    <div>
+    <main>
       <h1>Two Truths and A Lie</h1>
 
       <p>
@@ -35,9 +35,15 @@
       <h2>Question 1</h2>
 
       <ol>
-        <li>I can memorise the order of a random deck of cards</li>
-        <li>I can play guitar'</li>
-        <li>My favourite colour is blue</li>
+        <li>
+          <a href="incorrect.html"
+            >I can memorise the order of a random deck of cards</a
+          >
+        </li>
+        <li>
+          <a href="correct.html">I can play guitar</a>
+        </li>
+        <li><a href="incorrect.html">My favourite colour is blue</a></li>
       </ol>
       <h3>Enjoy the meme!</h3>
       <img
@@ -46,13 +52,16 @@
         alt="gru meme"
         width="250"
       />
+      <br /><br />
       <hr />
 
       <h2>Question 2</h2>
       <ol>
-        <li>I've fractured my arm before</li>
-        <li>I have over 20 cousins</li>
-        <li>I'm a great whistler</li>
+        <li><a href="incorrect.html">I've fractured my arm before</a></li>
+        <li><a href="incorrect.html">I have over 20 cousins</a></li>
+        <li>
+          <a href="correct.html">I'm a great whistler</a>
+        </li>
       </ol>
       <h3>Enjoy the meme!</h3>
       <img
@@ -60,21 +69,43 @@
         alt="thor meme"
         width="300"
       />
+      <br /><br />
       <hr />
 
       <h2>Question 3</h2>
       <ol>
-        <li>I've eaten a bug before</li>
-        <li>I've ran a marathon</li>
-        <li>I have a cousin named after me</li>
+        <li><a href="incorrect.html">I've eaten a bug before</a></li>
+        <li>
+          <a href="correct.html"> >I've ran a marathon</a>
+        </li>
+        <li><a href="incorrect.html">I have a cousin named after me</a></li>
       </ol>
-
       <h3>Enjoy the meme!</h3>
       <img
         src="https://img-9gag-fun.9cache.com/photo/ad83YLB_460s.jpg"
         alt="loki meme"
         width="250"
       />
-    </div>
+      <form action="/Users/laviniamonteiro/src/html/truth-lie/submit.html">
+        <label for="zero">
+          <input id="zero" type="radio" name="score" />zero</label
+        >
+
+        <label for="one">
+          <input id="one" type="radio" name="score" />one</label
+        >
+
+        <label for="two">
+          <input id="two" type="radio" name="score" />two</label
+        >
+
+        <label for="three">
+          <input id="three" type="radio" name="score" />three </label
+        ><br />
+
+        <input type="text" aria-placeholder="what's your name?" required />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
