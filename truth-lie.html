@@ -90,27 +90,28 @@
           width="250"
         />
       </div>
-      <div>
-        <form action="submit.html">
+       <div>
+        <form action="submit.html" method="GET">
+
           <label for="zero">
-            <input id="zero" type="radio" name="score" />zero</label
+            <input id="zero" type="radio" name="score" value="zero" />zero</label
           >
-
           <label for="one">
-            <input id="one" type="radio" name="score" />one</label
+            <input id="one" type="radio" name="score" value="one" />one</label
           >
-
           <label for="two">
-            <input id="two" type="radio" name="score" />two</label
+            <input id="two" type="radio" name="score" value="two" />two</label
           >
-
           <label for="three">
-            <input id="three" type="radio" name="score" />three </label
+            <input id="three" type="radio" name="score" value="three" />three </label
           ><br />
 
-          <input type="text" placeholder="what's your name?" required />
+          <label>name</label>
+          <input type="text" name="name" placeholder="what's your name?" required />
           <button type="submit">Submit</button>
+
         </form>
+      </div>
       </div>
     </main>
   </body>
